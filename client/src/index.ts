@@ -116,7 +116,7 @@ function update(): void {
 }
 
 function setupSocket(): void {
-  socket = io.connect('https://localhost:8080');
+  socket = io.connect('http://:::8080');
   title.writeln('Connecting to server...');
 
   socket.on('established', () => {
@@ -124,6 +124,7 @@ function setupSocket(): void {
     if (!competitorConnected) {
       title.writeln('Waiting for a competitor...');
       title.writeln('This is dependent on someone else visiting the site.');
+      title.writeln('(Or you visiting the site in another window.)');
     }
     socketEstablished = true;
   });
