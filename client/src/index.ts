@@ -74,7 +74,7 @@ function setupTitle(): void {
   title.writeln('  │   │  │   ││  ││ └─┘   ││ │└┐   │');
   title.writeln('  └───┘  └───┘└──┘└───────┘└─┘ └───┘');
 
-  title.writeln('<a href="http://createdby.fi">createdby.fi</a>');
+  title.writeln('<a href="https://duskvirkus.com/">https://duskvirkus.com/</a>');
   title.writeln('Use arrow keys or wasd to steer.');
   title.writeln('Try not to hit walls or paths.');
 }
@@ -116,7 +116,7 @@ function update(): void {
 }
 
 function setupSocket(): void {
-  socket = io.connect('http://localhost:3000');
+  socket = io.connect('http://localhost:8000');
   title.writeln('Connecting to server...');
 
   socket.on('established', () => {
