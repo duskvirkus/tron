@@ -116,7 +116,7 @@ function update(): void {
 }
 
 function setupSocket(): void {
-  socket = io.connect('http://:::8080');
+  socket = io.connect('http://localhost:8080');
   title.writeln('Connecting to server...');
 
   socket.on('established', () => {

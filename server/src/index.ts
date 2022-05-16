@@ -6,6 +6,7 @@ import {
 } from 'http';
 
 const express: any = require('express');
+require('dotenv').config()
 
 const app: Application = express();
 const server: Server = app.listen(process.env.PORT || 3000, () => {

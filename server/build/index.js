@@ -1,4 +1,5 @@
 var express = require('express');
+require('dotenv').config();
 var app = express();
 var server = app.listen(process.env.PORT || 3000, function () {
     var information = server.address();
