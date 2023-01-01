@@ -20,7 +20,7 @@
     "@types/express": "^4.16.1",
     "@types/socket.io": "^2.1.2",
     "@types/socket.io-client": "^1.4.32",
-    "parcel": "^1.12.3",
+    "parcel": "^2.8.2",
     "typescript": "^3.4.5"
   },
   "dependencies": {
